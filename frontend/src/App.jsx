@@ -1,25 +1,21 @@
-import './App.css'
-import { SignedIn, SignInButton, SignedOut, UserButton, SignOutButton } from '@clerk/clerk-react'
+import { SignedIn, SignInButton, SignedOut, UserButton, SignOutButton, useUser } from '@clerk/clerk-react'
+import { Route, Routes } from 'react-router'
+import { Toaster } from "react-hot-toast"
+import HomePage from './pages/HomePage'
 
 function App() {
+  const { isSignedIn } = useUser(); // useUser is a clerk hook
 
   return (
     <>
-      <h1>Welcome to the app</h1>
-      <SignedOut>
-        <SignInButton mode='modal'>
-          <button>Login</button>
-        </SignInButton>
-      </SignedOut>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
 
-      <SignedIn>
-        <SignOutButton />
-      </SignedIn>
 
-      <UserButton />
+      </Routes>
 
+      <Toaster toastOptions={{ duration: 3000 }} />
     </>
   )
 }
-
 export default App
