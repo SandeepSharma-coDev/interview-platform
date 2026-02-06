@@ -14,7 +14,6 @@ const app = express();
 
 const __dirname = path.resolve();
 
-
 //middleware
 app.use(express.json())
 // credentials:true meaning?? => server allow a browser to include cookies on request
