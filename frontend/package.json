@@ -20,6 +20,8 @@
     "@vitejs/plugin-react": "^5.1.1",
     "axios": "^1.13.4",
     "canvas-confetti": "^1.9.4",
+    "daisyui": "^5.5.17",
+    "date-fns": "^4.1.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
@@ -31,10 +33,6 @@
     "react-resizable-panels": "^4.6.0",
     "react-router": "^7.13.0",
     "tailwindcss": "^4.1.18",
-    "vite": "^7.2.4",
-    "daisyui": "^5.5.17"
-  },
-  "devDependencies": {
-    
+    "vite": "^7.2.4"
   }
 }
