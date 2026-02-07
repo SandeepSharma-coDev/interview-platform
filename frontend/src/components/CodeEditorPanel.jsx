@@ -56,7 +56,7 @@ function CodeEditorPanel({
           options={{
             fontSize: 16,
             lineNumbers: "on",
-            scrollBeyondLastLine: false,
+            // scrollBeyondLastLine: false,
             //         scrollbar: {
             //   alwaysConsumeMouseWheel: false, // <--- This allows the page to scroll
             // },
