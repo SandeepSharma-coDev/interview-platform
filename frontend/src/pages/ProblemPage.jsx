@@ -108,7 +108,7 @@ function ProblemPage() {
         <div className="h-screen bg-base-100 flex flex-col">
             <Navbar />
 
-            <div className="flex-1">
+            <div className="flex-1 overflow-hidden">
                 <Group orientation="horizontal">
                     {/* left panel - problem description */}
                     <Panel defaultSize={40} minSize={30}>
